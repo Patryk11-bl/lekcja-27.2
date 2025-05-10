@@ -2,14 +2,16 @@ try:
 
 
 
-    plik = open('test.txt', 'r+')
+    plik = open('test.txt', 'r')
 
 
 
-    plik.write('Hello')
+    plik.write('Y')
     plik.close()
 
 except FileNotFoundError:
-    print('Yyy plik nie istnieje, utwórz plik')
+    print(' Plik nie istnieje, utwórz plik')
+except:
+    print('Nieznany błąd')
 
 
