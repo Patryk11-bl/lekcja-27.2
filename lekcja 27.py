@@ -9,9 +9,10 @@ try:
     plik.write('Y')
     plik.close()
 
-except FileNotFoundError:
-    print(' Plik nie istnieje, utwórz plik')
-except:
+except FileNotFoundError as e:
+    print('Plik nie istnieje')
+    print(e)
+except Exception as e:
     print('Nieznany błąd')
-
+    print(e)
 
