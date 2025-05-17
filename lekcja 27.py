@@ -1,11 +1,6 @@
 try:
 
-
-
     plik = open('test.txt', 'r')
-
-
-
     plik.read('Y')
     plik.close()
 
